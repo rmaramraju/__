@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Maramraju</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Css/style.css">
+
+
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        font-family: 'Montserrat', sans-serif;
+        color: whitesmoke;
+    }
+    .ec{
+        background: black;
+    }
+    .container{
+        padding: 100px 0;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: black;
+    }
+
+    .timeline{
+        width: 80%;
+        height: auto;
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .timeline ul{
+        list-style: none;
+    }
+
+    .timeline ul li{
+        padding: 20px;
+        background-color: #1e1f22 ;
+        color: white;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .timeline ul li:last-child{
+        margin-bottom: 0;
+    }
+
+    .timeline-content h1{
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 30px;
+        margin-bottom: 10px;
+
+    }
+
+    .timeline-content p{
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 300;
+    }
+    .timeline-content .date{
+        color:#ffad3f ;
+        font-size: 13px;
+        font-weight: 300;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+    }
+
+    .experience{
+        padding: 4rem;
+        background-color: black;
+    }
+    .experience h1{
+        font-family: 'Italianno', cursive;
+        font-size: 4rem;
+        font-weight: bolder ;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    @media only screen and (min-width: 768px){
+        .timeline::before{
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: whitesmoke ;
+        }
+        .timeline ul li{
+            width: 50%;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        .timeline ul li:nth-child(odd){
+            float: left;
+            clear: right;
+            transform: translateX(-30px);
+            border-radius: 10px 10px 10px 10px;
+        }
+        .timeline ul li:nth-child(even){
+            float: right;
+            clear: left;
+            transform: translateX(30px);
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        .timeline ul li::after{
+            content: '';
+            position: absolute;
+            height: 20px ;
+            width: 20px;
+            background-color: gray;
+            border-radius: 40%;
+            top: 0; 
+        }
+
+        .timeline ul li:nth-child(odd)::after{
+            transform: translate(50%, -50%);
+            right: -30px;
+        }
+        .timeline ul li:nth-child(even)::after{
+            transform: translate(-50%, -50%);
+            left: -30px;
+        }
+
+        .timeline ul li:hover:after{
+            background-color: #ffad3f;
+        }
+
+        .timeline-content .date{
+            position: absolute;
+            top: -50px;
+            color: #ffad3f;
+        }
+        .experience{
+            padding: 4rem;
+            background-color: black;
+        }
+        .experience h1{
+            font-family: 'Italianno', cursive;
+            font-size: 5rem;
+            font-weight: bolder ;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <section class="ec">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">/ Home</a>
+            <a href="projects.html">/ Projects</a>
+            <a href="skills.html">/ Skills</a>
+            <a href="extracurriculars.html"> / EC</a>
+            <a href="contact.html">/ Contact</a>
+            <br>
+            <br>
+            <br>
+            <div class="social-text-gray">
+                <a href="https://www.instagram.com/r_maramraju/?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+                <a href="https://github.com/rmaramraju"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/rahulmaramraju"><i class="fa fa-linkedin"></i></a>
+            </div>
+            </div>
+          <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          </div>
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
+        </div>
+    </section>
+
+    <section class="experience">
+
+        <h1>Extra-curriculars and Experience</h1>
+
+
+    </section>
+
+    <div class="container">
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div class="timeline-content">
+                        <h2 class="date">1 Dec, 2020 - 1 March, 2021</h2>
+                        <h1>Regional Co-ordinator, <br>Enunciate School of Communication</h1>
+                        <p>-Represented the organization in my state <br>-Handled Social media platforms of the Company <br>-Content development for PR marketing</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h2 class="date">1 July, 2021 - Present</h2>
+                        <h1>Head of Campus, <br>Under25</h1>
+                        <p>-Campus Head for the Organization <br>-Building Team working skills and confidence among undergraduates <br>-Organization of awareness events and solving problems of students in their respective departments</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+</html>

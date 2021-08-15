@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Maramraju</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Css/style.css">
+</head>
+<body>
+    
+    <div id="vanta-canvas">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html"> / Home </a>
+            <a href="projects.html"> / Projects</a>
+            <a href="skills.html"> / Skills</a>
+            <a href="extracurriculars.html"> / EC</a>
+            <a href="contact.html"> / Contact</a>
+            <br>
+            <br>
+            <br>
+            <div class="social-text-gray">
+                <a href="https://www.instagram.com/r_maramraju/?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+                <a href="https://github.com/rmaramraju"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/rahulmaramraju"><i class="fa fa-linkedin"></i></a>
+            </div>
+            </div>
+          <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          </div>
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
+          <h1>Hey, I'm Rahul!
+            <p>I'm a Web Dev(Work in Progress!)</p>
+          </h1>
+        </div>
+        
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.net.min.js"></script>
+      <script src="vanta.net.min.js"></script>
+      <script type="text/javascript">
+
+        VANTA.NET({
+        el: "#vanta-canvas",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0xffab00,
+        backgroundColor: 0x0
+        })
+      </script>
+  </div>
+
+    <section class="about">
+        <h1>About:
+            <p>
+              I'm a Tech-Enthusiast tipping towards .NET development 
+              but comfortable with generic programming too. 
+              Web Development started out as a hobby of mine, but I soon began 
+              learning about various tools out of Interest.
+              Other than that I love reading books,
+               listening to Rock and trying to come up with a plan for world domination.
+            </p>
+        </h1>   
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#vanta-canvas h1 {
+    min-height: 130vh;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #ffad3f;
+}
+
+.sidenav .closebtn {
+    color: #ffad3f;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+#main span {
+    color: #ffad3f;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/*font-family: 'Italianno', cursive;*/
+
+#vanta-canvas {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    transition: ease-in 5s;
+}
+
+#vanta-canvas h1 {
+    padding-top: 22rem;
+    padding-left: 7rem;
+    font-family: 'Italianno', cursive;
+    justify-content: center;
+    text-align: left;
+    color: white;
+    font-size: 6rem;
+}
+
+#vanta-canvas p {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Lucida Sans';
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #ffad3f);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, #242323);
+}
+
+.about {
+    overflow: hidden;
+    background: url(/Images/27230.jpg);
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.about h1 {
+    padding-left: 5rem;
+    justify-content: space-between;
+    font-family: 'Italianno', cursive;
+    font-size: 5rem;
+    padding-top: 7rem;
+    color: white;
+}
+
+.about p {
+    font-size: 2rem;
+    font-family: 'Times New Roman';
+    padding-top: 4rem;
+    color: white;
+}
+
+/*---------------Skills-----------------*/
+
+/*------------------------PROJECTS-----------------------*/
+#vanta-canvas2 {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    transition: ease-in 5s;
+}
+
+#vanta-canvas2 h1 {
+    padding-top: 22rem;
+    padding-left: 7rem;
+    font-family: 'Italianno', cursive;
+    justify-content: center;
+    text-align: left;
+    color: white;
+    font-size: 6rem;
+}
+
+#vanta-canvas2 p {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Lucida Sans';
+}
+
+.project {
+    background: black;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .row {
+        width: 100%;
+        display: block;
+        height: fit-content;
+    }
+
+    .column {
+        width: 100%;
+        display: block;
+
+    }
+
+    body>section.project {
+        width: fit-content;
+        min-height: 250vh;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+.container h2,
+p {
+    padding: 10px;
+    color: white;
+}
+
+/* Clear floats */
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #ffad3f;
+}
+
+@media screen and (max-width: 360px) {
+
+    #vanta-canvas h1 {
+        padding-top: 12rem;
+        padding-left: 4rem;
+        font-family: 'Italianno', cursive;
+        justify-content: center;
+        text-align: left;
+        color: white;
+        font-size: 4rem;
+    }
+
+    .about {
+        overflow: hidden;
+        background: url(/Images/27230.jpg);
+        background-size: cover;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .about h1 {
+        padding-left: 2rem;
+        justify-content: space-between;
+        font-family: 'Italianno', cursive;
+        font-size: 3rem;
+        padding-top: 7rem;
+        color: white;
+    }
+
+    .about p {
+        justify-content: center;
+        align-items: center;
+        font-size: 2.1rem;
+        font-family: 'Italianno', cursive;
+        padding-top: 2rem;
+        color: white;
+    }
+
+    #vanta-canvas2 h1 {
+        padding-top: 12rem;
+        padding-left: 4rem;
+        font-family: 'Italianno', cursive;
+        justify-content: center;
+        text-align: left;
+        color: white;
+        font-size: 4rem;
+    }
+
+    #vanta-canvas2 p {
+        color: white;
+        font-size: 2rem;
+        font-family: 'Lucida Sans';
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    #vanta-canvas h1 {
+        padding-top: 12rem;
+        padding-left: 4rem;
+        font-family: 'Italianno', cursive;
+        justify-content: center;
+        text-align: left;
+        color: white;
+        font-size: 4rem;
+    }
+
+    .about h1 {
+        padding-left: 2rem;
+        justify-content: space-between;
+        font-family: 'Italianno', cursive;
+        font-size: 3rem;
+        padding-top: 7rem;
+        color: white;
+    }
+
+    .about p {
+        justify-content: center;
+        align-items: center;
+        font-size: 2.1rem;
+        font-family: 'Italianno', cursive;
+        padding-top: 2rem;
+        color: white;
+    }
+
+    #vanta-canvas2 h1 {
+        padding-top: 12rem;
+        padding-left: 4rem;
+        font-family: 'Italianno', cursive;
+        justify-content: center;
+        text-align: left;
+        color: white;
+        font-size: 4rem;
+    }
+
+    #vanta-canvas2 p {
+        color: white;
+        font-size: 2rem;
+        font-family: 'Lucida Sans';
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #vanta-canvas h1 {
+        padding-top: 12rem;
+        padding-left: 5rem;
+        font-family: 'Italianno', cursive;
+        justify-content: center;
+        text-align: left;
+        color: white;
+        font-size: 4rem;
+        transition: ease 2s;
+    }
+
+    #vanta-canvas p {
+        color: white;
+        font-size: 1.6rem;
+        font-family: 'Segoe UI';
+        transition: ease 3s;
+    }
+
+    .about h1 {
+        padding-left: 2rem;
+        justify-content: space-between;
+        font-family: 'Italianno', cursive;
+        font-size: 3rem;
+        padding-top: 4rem;
+        color: white;
+        transition: ease-in-out 4s;
+    }
+
+    .about p {
+        justify-content: center;
+        align-items: center;
+        font-size: 2.1rem;
+        font-family: 'Italianno', cursive;
+        padding-top: 2rem;
+        color: white;
+    }
+
+    #vanta-canvas2 h1 {
+        padding-top: 12rem;
+        padding-left: 4rem;
+        font-family: 'Italianno', cursive;
+        justify-content: center;
+        text-align: left;
+        color: white;
+        font-size: 4rem;
+        transition: ease-in 2s;
+    }
+
+    #vanta-canvas2 p {
+        color: white;
+        font-size: 2rem;
+        font-family: 'Lucida Sans';
+        transition: ease-in 3s;
+    }
+
+    #vanta-canvas>h1 {
+        padding-left: 2rem;
+    }
+
+    #vanta-canvas2>h1 {
+        padding-left: 1rem;
+    }
+}
